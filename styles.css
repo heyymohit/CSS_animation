@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    position: relative;
+    background: url(project-2.jpg) no-repeat center center/ cover;
+    height: 100vh;
+}
+#open-btn{
+    position: absolute;
+    font-size: 2rem;
+    top: 70%;
+    left: 10%;
+    width: 350px;
+    height: 80px;
+    background: transparent;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 3px black;
+    color: white;
+    transition: .5s;
+    padding-top: 20px;
+}
+#open-btn:hover{
+    background-color: white;
+    color: black;
+}
+#model{
+    color: black;
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+    animation-name: animatemodel;
+    animation-duration: .4s;
+}
+#close-btn{
+    font-size: 3rem;
+}
+#close-btn:hover{
+    cursor: pointer;
+    color: red;
+}
+#model-container{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .2);
+}
+@keyframes animatemodel {
+    from{
+        top: -300px;
+
+    }
+    to{
+        top: 50%;
+    }
+    
+}
